@@ -30,12 +30,13 @@
         {% endif %}
         </div>
 
-        <div>
         <h2>Most Viewed Pages</h2>
+        <div>
         {% if pages %}
             <ul>
             {% for page in pages %}
-                <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+                <li>
+                    <a href="{{ page.url }}">{{ page.title }}</a></li>
             {% endfor %}
             </ul>
         {% else %}
