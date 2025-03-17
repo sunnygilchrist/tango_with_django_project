@@ -53,6 +53,10 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+MIDDLEWARE_CLASSES = [
+    'django.contrib.sessions.middleware.SessionMiddleware',
+]
+
 ROOT_URLCONF = 'tango_with_django_project.urls'
 
 TEMPLATES = [
@@ -132,3 +136,5 @@ MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
 
 LOGIN_URL = 'rango:login'
+
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
